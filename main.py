@@ -43,7 +43,7 @@ trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
 # Timing start
 start_time = time.time()
 # Training loop
-for epoch in range(50):  # Loop over the dataset multiple times
+for epoch in range(10):  # Loop over the dataset multiple times
     running_loss = 0.0
     for i, data in enumerate(trainloader, 0):
         inputs, labels = data
