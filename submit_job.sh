@@ -9,7 +9,7 @@
 #SBATCH --gres=gpu:a30:1             #Specify GPU architecture and number of GPU required
 #SBATCH --mem=40G                    #Request 40G per node
 #SBATCH --output=pytorch-gpu.%j      #Send stdout/err to "pytorch-gpu.[jobID]"
-##SBATCH --reservation=cybertraining
+#SBATCH --reservation=cybertraining
 
 ml purge
 ml WebProxy
